@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
                 view.setSelected(true);
                 Intent intent = new Intent(MainActivity.this , Main2Activity.class);
                 intent.putExtra(AGE_MSG_KEY, "Item is : " +myItems[i]);
-                intent.putExtra(NAME_MSG_KEY, "Item is: " +myItems[i]);
                 startActivity(intent);
             }
         });
