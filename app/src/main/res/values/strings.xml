@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">IntentDemo_Lec6</string>
     <string name="btn1_ma1_label">Move to UI2</string>
+    <string name="enter_age">Enter age</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter name</string>
+    <string name="age">Age</string>
     <string-array name="my_itm_lst">
         <item>CSIT111</item>
         <item>CSIT118</item>
