@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 view.setSelected(true);
                 Intent intent = new Intent(MainActivity.this , Main2Activity.class);
                 intent.putExtra(AGE_MSG_KEY, "Item is : " +myItems[i]);
+                intent.putExtra(NAME_MSG_KEY, "Item is: " +myItems[i]);
                 startActivity(intent);
             }
         });
@@ -54,11 +55,13 @@ public class MainActivity extends AppCompatActivity {
 class MyLstnr implements View.OnClickListener{
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View view) {
         Intent intent2 = new Intent(MainActivity.this, Main2Activity.class);
-        intent2.putExtra(AGE_MSG_KEY,"Your age is " + Integer.parseInt(editText1.getText().toString()));
-        intent2.putExtra(NAME_MSG_KEY,"Your name is " +editText2.getText().toString());
+        intent2.putExtra(AGE_MSG_KEY, "Your age is " + Integer.parseInt(editText1.getText().toString()));
+        intent2.putExtra(NAME_MSG_KEY, "Your name is " + editText2.getText().toString());
         startActivity(intent2);
+
+
 
 
     }
